@@ -8,5 +8,5 @@ setup(
     version='0.0.1',
     author='Ariel',
     install_requires=install_requires,
-    packages=['pda']
+    packages=['pda','setup_tools']
 )

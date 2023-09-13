@@ -1,0 +1,1 @@
+URL='https://raw.githubusercontent.com/dariusk/corpora/master/data/geography/countries_with_capitals.json'
