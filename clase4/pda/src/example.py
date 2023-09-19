@@ -6,8 +6,11 @@ def my_func(x):
     res=math.sqrt(x_proc)
     return res
 
-if __name__=='__main__':
-    #breakpoint()
+def main():
+    breakpoint()
     var=2
     return_value=my_func(var)
     print(return_value)
+
+if __name__=='__main__':
+    main()
