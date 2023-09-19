@@ -8,7 +8,7 @@ def my_func(x):
 
 def main():
     breakpoint()
-    var=2
+    var=-2
     return_value=my_func(var)
     print(return_value)
 

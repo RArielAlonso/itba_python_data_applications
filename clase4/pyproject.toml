@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 pdbpp = "^0.10.3"
+pytest = "^7.4.2"
+jupyter = "^1.0.0"
 
 
 [build-system]
