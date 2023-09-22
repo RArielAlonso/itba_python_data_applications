@@ -4,12 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["RArielAlonso <rariel.alonso@gmail.com>"]
 readme = "README.md"
+packages = [{include = "example_pytest" }]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.13"
 pdbpp = "^0.10.3"
 pytest = "^7.4.2"
 jupyter = "^1.0.0"
+numpy = "^1.26.0"
+pandas = "^2.1.1"
 
 
 [build-system]
