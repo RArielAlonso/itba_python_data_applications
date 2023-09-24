@@ -101,6 +101,17 @@ dev = ["cogapp", "pre-commit", "pytest", "wheel"]
 tests = ["pytest"]
 
 [[package]]
+name = "argparse"
+version = "1.4.0"
+description = "Python command-line parsing library"
+optional = false
+python-versions = "*"
+files = [
+    {file = "argparse-1.4.0-py2.py3-none-any.whl", hash = "sha256:c31647edb69fd3d465a847ea3157d37bed1f95f19760b11a47aa91c04b666314"},
+    {file = "argparse-1.4.0.tar.gz", hash = "sha256:62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4"},
+]
+
+[[package]]
 name = "arrow"
 version = "1.2.3"
 description = "Better dates & times for Python"
@@ -1774,6 +1785,20 @@ files = [
 six = ">=1.5"
 
 [[package]]
+name = "python-dotenv"
+version = "0.9.0"
+description = "Add .env support to your django/flask apps in development and deployments"
+optional = false
+python-versions = "*"
+files = [
+    {file = "python-dotenv-0.9.0.tar.gz", hash = "sha256:38f22d75f1180256e60c8b06aa06f5254479c1bf5947430c97e3d737d90e8731"},
+    {file = "python_dotenv-0.9.0-py2.py3-none-any.whl", hash = "sha256:52e8c56e7c362fe9082abc949ea5fed6993c3651e059df0d7c8e18883827d737"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "python-json-logger"
 version = "2.0.7"
 description = "A python library adding a json log formatter"
@@ -2671,4 +2696,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.13"
-content-hash = "939c653c85b3ef87ecf061e11581ca576b678f66efb344baa122f98c26b73d60"
+content-hash = "cd51e07e184340a2ed88475b16ab9f64c05522dd6f238f65e8c51273c4a91f11"
