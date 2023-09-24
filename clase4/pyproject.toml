@@ -7,7 +7,8 @@ readme = "README.md"
 packages = [{include="example_pytest"} ,
 {include="docstrings"},
 {include= "pda" },
-{include= "config_example" } ]
+{include= "config_example" },
+{include= "memory_profiling" } ]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
@@ -22,6 +23,7 @@ sphinx = "^7.2.6"
 python-dotenv = "0.9"
 pyyaml = "^6.0.1"
 argparse = "^1.4.0"
+memory-profiler = "^0.61.0"
 
 
 [build-system]
