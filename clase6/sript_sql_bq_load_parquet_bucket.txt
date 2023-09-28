@@ -1,0 +1,4 @@
+bq load \
+--source_format=PARQUET \
+dataset_dev.table \
+"gs://bucket_itba_ariel/generic-food.parquet"
