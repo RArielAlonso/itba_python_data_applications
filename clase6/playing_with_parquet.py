@@ -20,7 +20,7 @@ def read_csv(size):
 
 
 def to_parquet(df,size,compression):
-     df.to_parquet(f'random-person-{size}-rows-{compression}-compression.parquet', compression=compression)
+    df.to_parquet(f'random-person-{size}-rows-{compression}-compression.parquet', compression=compression)
 
 
 def main():
@@ -44,9 +44,9 @@ def main():
             results_dict_csv[i,j] = {
                 "rows": int(i),
                 "compression": j,
-                "time_generation_csv": round(delta_generation_csv,2),
-                "time_reading_csv": round(delta_reading_time,2),
-                "compression_time": round(delta_compression_time,2),
+                "time_generation_csv": round(delta_generation_csv, 2),
+                "time_reading_csv": round(delta_reading_time, 2),
+                "compression_time": round(delta_compression_time, 2),
                 "parquet_size_kb": round(os.path.getsize(f'random-person-{i}-rows-{j}-compression.parquet')/1024**1),
                 "csv_size_kb": round(os.path.getsize(f'random-person-{i}-rows.csv')/1024**1)
             }        
