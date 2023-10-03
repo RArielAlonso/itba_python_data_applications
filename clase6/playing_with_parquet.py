@@ -6,7 +6,7 @@ import os
 
 def generate_random_csv(size):
     df = pd.DataFrame()
-    df['name'] = np.random.choice(['Ariel', 'Miguel', 'Nicolas','Florencia', 'Ana'], size)
+    df['name'] = np.random.choice(['Ariel', 'Miguel', 'Nicolas', 'Florencia', 'Ana'], size)
     df['last_name'] = np.random.choice(['Alonso', 'Sanchez', 'Fernandez', 'Martinez', 'Peruzzi'], size)
     df['age'] = np.random.randint(1, 100, size)
     df['liter_water_per_day'] = np.random.uniform(0, 4, size)
@@ -41,7 +41,7 @@ def main():
             delta_generation_csv = end_generating_csv_time-start_generating_csv_time
             delta_reading_time = finished_reading_time-start_reading_time
             delta_compression_time = end_compression_time-start_compression_time
-            results_dict_csv[i,j] = {
+            results_dict_csv[i, j] = {
                 "rows": int(i),
                 "compression": j,
                 "time_generation_csv": round(delta_generation_csv, 2),
