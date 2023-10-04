@@ -19,7 +19,7 @@ def read_csv(size):
     return data_csv
 
 
-def to_parquet(df,size,compression):
+def to_parquet(df, size, compression):
     df.to_parquet(f'random-person-{size}-rows-{compression}-compression.parquet', compression=compression)
 
 
